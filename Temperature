@@ -1,0 +1,24 @@
+package demo1;
+
+public class temp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String source=args[0];
+		double value=Double.parseDouble(args[1]);
+		String target=args[2];
+		if(source.charAt(0)=='c'&target.charAt(0)=='k')
+		{
+			double converted=value+273.15;
+			System.out.println(value+""+"Degree celsius is equal to "+converted+"kelvin");
+			
+		}
+		else if(source.charAt(0)=='c'&target.charAt(0)=='f')
+		{
+			double converted=(9/5)*value+32;
+			System.out.println(value+""+"Degree celsius is equal to "+converted+"faranheit");
+		}
+
+	}
+
+}
